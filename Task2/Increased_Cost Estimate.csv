@@ -1,6 +1,6 @@
 Estimate summary,,,,,,,,,
 Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
-0,19876.76,238521.12,USD,,,,,,
+0,18556.73,222680.76,USD,,,,,,
 ,,* Includes upfront cost,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
@@ -8,14 +8,15 @@ Detailed Estimate,,,,,,,,,
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
 My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
 My Estimate,US East (N. Virginia),,Application Load Balancer,0,389.09,4669.08,USD,,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),,VPN Connection,0,73,876,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2)"
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,3504.96,42059.52,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m5a.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,8380.6867,100568.24,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3 TB), Quantity (1), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (2 TB), Total Size of Backup Processed for Export (GB) (10000 per day), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.95)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,4556.8,54681.6,USD,,S3 Standard storage (200 TB per month)
-My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,"DT Inbound: Internet (0 TB per month), DT Outbound: Not selected (0 TB per month)"
-My Estimate,US East (N. Virginia),,AWS Data Transfer,0,0,0,USD,,"DT Inbound: Internet (7 TB per month), DT Outbound: Not selected (50 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,73,876,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations ()"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,157.86,1894.32,USD,,Number of NAT Gateways (2)
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,5345.44,64145.28,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5a.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (2 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,10130.84,121570.08,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (10 TB)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,776.24,9314.88,USD,,"S3 Standard storage (10 TB per month), Data returned by S3 Select (1 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (100000000), GET, SELECT, and all other requests from S3 Standard (100000000)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,0,0,USD,,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
 My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (6), Number of EIPs per instance (1)"
-My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,2789.216,33470.59,USD,,"Number of Metrics (includes detailed and custom metrics) (5000), Standard Logs: Data Ingested (1 TB), Logs Delivered to CloudWatch Logs: Data Ingested (1 TB), Logs Delivered to S3: Data Ingested (1 TB)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,1501.259,18015.11,USD,,"Number of Metrics (includes detailed and custom metrics) (5000), Standard Logs: Data Ingested (1 GB), Logs Delivered to CloudWatch Logs: Data Ingested (1 GB), Logs Delivered to S3: Data Ingested (1 GB), Number of Standard Resolution Alarm Metrics (), Number of Lambda functions ()"
 ,,,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
@@ -24,7 +25,9 @@ Acknowledgement,,,,,,,,,
 ,,,,,,,,,
 Rationale: Increase resources,,,,,,,,,
 Changes:,,,,,,,,,
-"RDS service increased to db.m5.8xlarge vCPU: 32 Memory: 128 GiB. Increased storage amount to 3 TB, backup storage amount to 2TB, Size of Backup Processed for Export amount to 10000 GB per day. It provides increased resilience and redundancy with its multi-region deployment.",,,,,,,,,
+EC2- increased number of instances from total 6 to 8 for the Web Servers,,,,,,,,,
+RDS service increased to db.m5.8xlarge vCPU: 32 Memory: 128 GiB. Increased backup storage amount to 10 TB. It provides increased resilience and redundancy with its multi-region deployment.,,,,,,,,,
 "Added Amazon CloudWatch, to collect various logs and notify me during any alarms.",,,,,,,,,
+VPC - increased number of NAT Gateways from 1 to 2,,,,,,,,,
 ,,,,,,,,,
-Total monthly,,,,,19876.76,238521.12,USD,,
+Total monthly,,,,,18556.73,222680.76,USD,,

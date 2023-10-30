@@ -1,19 +1,20 @@
 Estimate summary,,,,,,,,,
 Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
-0,8492.52,101910.24,USD,,,,,,
+0,9719.13,116629.56,USD,,,,,,
 ,,* Includes upfront cost,,,,,,,
 ,,,,,,,,,
 ,,,,,,,,,
 Detailed Estimate,,,,,,,,,
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
-My Estimate,US East (N. Virginia),,Amazon EC2 ,0,2987.3,35847.6,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (m5a.4xlarge), Pricing strategy (EC2 Instance Savings Plans 3 Year  None upfront), Enable monitoring (disabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
-My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,,"Hosted Zones (1), Additional Records in Hosted Zones (), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
 My Estimate,US East (N. Virginia),,Application Load Balancer,0,389.09,4669.08,USD,,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),,VPN Connection,0,73,876,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2)"
-My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4816.095,57793.14,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 GB)"
-My Estimate,US East (N. Virginia),,S3 Standard,0,23.55,282.6,USD,,S3 Standard storage (1 TB per month)
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,73,876,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations ()"
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,78.93,947.16,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,3517.56,42210.72,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m5a.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,4913.28,58959.36,USD,,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1 TB)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,564.27,6771.24,USD,,"S3 Standard storage (1 TB per month), Data returned by S3 Select (1 TB per month), PUT, COPY, POST, LIST requests to S3 Standard (100000000), GET, SELECT, and all other requests from S3 Standard (100000000)"
 My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
-My Estimate,US East (N. Virginia),,AWS Data Transfer,0,20.48,245.76,USD,,"DT Inbound: Internet (1 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (1 TB per month), Data transfer cost (20.48)"
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,0,0,USD,,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
 My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 instances (6), Number of EIPs per instance (1)"
 ,,,,,,,,,
 ,,,,,,,,,
@@ -21,4 +22,4 @@ My Estimate,US East (N. Virginia),,Amazon Elastic IP,0,0,0,USD,,"Number of EC2 i
 Acknowledgement,,,,,,,,,
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
 ,,,,,,,,,
-Total monthly,,,,,8492.52,101910.24,USD,,
+Total monthly,,,,,9719.13,116629.56,USD,,
